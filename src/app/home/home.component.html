@@ -1,0 +1,156 @@
+<app-header></app-header>
+
+<!-- Home Container -->
+<div class="home-container">
+    <!-- All Movies Section -->
+    <div class="all-movies">
+        <!-- Trending Movies Section -->
+        <div class="movies-container trending-movies">
+            <div class="top">
+                <!-- Title for Trending Movies -->
+                <h4>Trending Movies</h4>
+                <!-- View All Button -->
+                <div class="view-all" (click)="toggleAllMovies()">
+                    {{ viewAllTrending ? 'View Less' : 'View All' }}
+                </div>
+            </div>
+
+            <!-- Displaying Initial Trending Movies -->
+            <div class="movie-thumbnail">
+                <div class="movie" *ngFor="let movie of initialMovies">
+                    <!-- Movie Cover with Details -->
+                    <div class="cover" (click)="goToMovie('trending',movie.id)">
+                        <!-- Movie Card -->
+                        <div class="card">
+                            <div class="card-body">
+                                <img [src]="movie.cover">
+                            </div>
+                            <div class="details">
+                                <!-- Movie Name -->
+                                <div class="name" align="center">{{movie.name}}</div>
+                                <!-- Movie Rating -->
+                                <div class="rating horizontal">
+                                    <span class="rating-value" style="color:rgb(31, 149, 245)">{{movie.rating}}</span>
+                                    <app-star-rating [rating]="movie.rating" [isReadonly]="true"
+                                        style="padding-left: 20px;"></app-star-rating>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Display Remaining Trending Movies if View All is toggled -->
+            <br>
+            <div class="movie-thumbnail" *ngIf="viewAllTrending">
+                <div class="movie" *ngFor="let movie of remainingTrendingMovies">
+                    <div class="cover" (click)="goToMovie('trending',movie.id)">
+                        <div class="card">
+                            <div class="card-body">
+                                <img [src]="movie.cover">
+                            </div>
+                            <div class="details">
+                                <div class="name" align="center">{{movie.name}}</div>
+                                <div class="rating horizontal">
+                                    <span class="rating-value" style="color:rgb(31, 149, 245)">{{movie.rating}}</span>
+                                    <app-star-rating [rating]="movie.rating" [isReadonly]="true"
+                                        style="padding-left: 20px;"></app-star-rating>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!-- Popular Movies Section -->
+        <div class="popular-movies">
+            <!-- Title for All Time Popular Movies -->
+            <h4>All Time Popular</h4>
+            <div class="movies">
+                <!-- Displaying Initial Popular Movies -->
+                <div *ngFor="let movie of initialPopularMovies" class="movie" (click)="goToMovie('popular', movie.id)">
+                    <!-- Movie Name and Ratings -->
+                    <span class="name">{{ movie.name }}</span>
+                    <div class="ratings horizontal">
+                        <span class="user-rating">{{ movie.userRating }}</span>
+                        <app-star-rating [rating]="movie.rating" [isReadonly]="true"></app-star-rating>
+                        <span class="overall-rating" style="color:rgb(31, 149, 245)">{{ movie.rating }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Button for Popular Movies -->
+            <div class="view-all" (click)="toggleAllMovies3()">
+                {{ viewAllPopular ? 'View Less' : 'View All' }}
+            </div>
+
+            <!-- Display Remaining Popular Movies if View All is toggled -->
+            <div class="movie-thumbnail2" *ngIf="viewAllPopular">
+                <div *ngFor="let movie of remainingPopularMovies" class="movie"
+                    (click)="goToMovie('popular', movie.id)">
+                    <span class="name">{{ movie.name }}</span>
+                    <div class="ratings horizontal">
+                        <span class="user-rating">{{ movie.userRating }}</span>
+                        <app-star-rating [rating]="movie.rating" [isReadonly]="true"></app-star-rating>
+                        <span class="overall-rating" style="color:rgb(31, 149, 245)">{{ movie.rating }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Theatre Movies Section -->
+        <div class="movies-container theatre-movies">
+            <div class="top">
+                <!-- Title for Now Playing In Theatre Movies -->
+                <h4>Now Playing In Theatre</h4>
+                <!-- View All Button for Theatre Movies -->
+                <div class="view-all" (click)="toggleAllMovies2()">
+                    {{ viewAllTheatre ? 'View Less' : 'View All' }}
+                </div>
+            </div>
+
+            <!-- Displaying Initial Theatre Movies -->
+            <div class="movie-thumbnail">
+                <div class="movie" *ngFor="let movie of initialTheatreMovies">
+                    <div class="cover" (click)="goToMovie('theatre',movie.id)">
+                        <div class="card">
+                            <div class="card-body">
+                                <img [src]="movie.cover">
+                            </div>
+                            <div class="details">
+                                <div class="name" align="center">{{movie.name}}</div>
+                                <div class="rating horizontal">
+                                    <span class="rating-value" style="color:rgb(31, 149, 245)">{{movie.rating}}</span>
+                                    <app-star-rating [rating]="movie.rating" [isReadonly]="true"
+                                        style="padding-left: 20px;"></app-star-rating>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Display Remaining Theatre Movies if View All is toggled -->
+            <div class="movie-thumbnail" *ngIf="viewAllTheatre">
+                <div class="movie" *ngFor="let movie of remainingTheatreMovies">
+                    <div class="cover" (click)="goToMovie('theatre',movie.id)">
+                        <div class="card">
+                            <div class="card-body">
+                                <img [src]="movie.cover">
+                            </div>
+                            <div class="details">
+                                <div class="name" align="center">{{movie.name}}</div>
+                                <div class="rating horizontal">
+                                    <span class="rating-value" style="color:rgb(31, 149, 245)">{{movie.rating}}</span>
+                                    <app-star-rating [rating]="movie.rating" [isReadonly]="true"
+                                        style="padding-left: 20px;"></app-star-rating>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

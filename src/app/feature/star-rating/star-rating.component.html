@@ -1,0 +1,26 @@
+<!-- Template for star rendering -->
+<ng-template #t let-fill="fill">
+    <!-- Displaying star with full or empty based on fill value -->
+    <span class="star" [class.full]="fill===100">
+        <!-- Filled star visual representation based on fill value -->
+        <span class="full-star" [style.width.%]="fill"></span>&#9733;
+    </span>
+</ng-template>
+
+<!-- Display NgbRating component -->
+<ngb-rating [max]="5" [(rate)]="rating" [readonly]="isReadonly" id="rate" [starTemplate]="t"></ngb-rating>
+
+<!-- Display user rating information if showRating is true -->
+<div *ngIf="showRating">
+    <p>Rating from {{ratingcount}} Users</p>
+    <p>Avg Rating: {{finalrating}}</p>
+</div>
+
+<!-- Allow user rating input if showRating is true -->
+<div *ngIf="showRating">
+    <!-- Display NgbRating component for user input -->
+    <ngb-rating [max]="5" (click)="user()" (ngModelChange)="ratingControl.setValue($event)"
+        [ngModel]="ratingControl.value" id="userrating" [starTemplate]="t"></ngb-rating>
+    <!-- Display user's selected rating -->
+    <p id="userrating">Your Rating: {{ratingControl.value}}</p>
+</div>

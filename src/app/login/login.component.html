@@ -1,0 +1,90 @@
+<!-- Login Section -->
+<div class="login">
+    <!-- Background overlay -->
+    <div class="blur-background"></div>
+
+    <!-- Login Content -->
+    <div class="content">
+        <!-- Header Section -->
+        <div class="header" style="background-color: rgb(0, 0, 0);">
+            <!-- Logo -->
+            <div class="logo">
+                Movie Reviews
+            </div>
+            <!-- Login Button -->
+            <div class="button">
+                <button class="neon-btn" (click)="toShowlogin()">Login</button>
+            </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="description">
+            <!-- Description of the platform -->
+            Welcome to Angular Movie Reviews, the ultimate destination for movie enthusiasts! Dive into a world of
+            films, where authentic reviews, ratings, and vibrant discussions await. Share your opinions, discover new
+            favorites, and connect with a passionate community of fellow movie lovers. Join us and be part of the
+            conversation at Angular Movie Reviews! This shorter version aims to highlight the core aspects of your
+            website—reviews, ratings, community engagement, and discovery—while inviting users to explore and contribute
+            to the platform. Adjust as needed to emphasize any unique features that make your website stand out.
+        </div>
+
+        <!-- Login Card -->
+        <div class="login-card" [ngClass]="{'show': showLogin}">
+            <!-- Card displayed when showLogin is true -->
+            <div class="card" *ngIf="showLogin">
+                <!-- Card Header -->
+                <span>
+                    <div class="card-head" align="center">
+                        <!-- Login Title with Close Button -->
+                        Login <i class="bi bi-person"></i><i class="bi bi-x" style="padding-left: 70%;"
+                            (click)="hideLogin()"></i>
+                    </div>
+                </span>
+
+                <!-- Card Body - Login Form -->
+                <div class="card-body">
+                    <form class="login-form">
+                        <!-- Username Input -->
+                        <div class="form-group">
+                            <label for="userName" style="padding-left: 42%;">userName</label>
+                            <br><br>
+                            <input type="text" id="userName" [(ngModel)]="userName" name="username"
+                                class="form-control">
+                        </div>
+                        <br>
+
+                        <!-- Password Input -->
+                        <div class="form-group">
+                            <label for="password" align="center" style="padding-left: 42%;">password</label>
+                            <br><br>
+                            <input type="password" class="form-control" id="password" name="password"
+                                [(ngModel)]="password">
+                        </div>
+
+                        <!-- Error Message Display -->
+                        <p align="center" style="color: red;font-weight: bold;font-size: larger;">{{errorMessage}}</p>
+                        <br>
+
+                        <!-- Login and Signup Buttons -->
+                        <button class="btn btn-light btn-sm" style="margin-left: 45%;"
+                            (click)="switchToSignup()">{{login1}}</button>
+                        <span>
+                            <br>
+                            <button class="btn btn-link" (click)="switchToSignup()"
+                                style="color: rgb(8, 239, 255);">{{switch}}</button>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <span id="Icons">
+            <!-- Follow Us On text -->
+            <p id="followus">Follow Us On</p>
+            <!-- Social Media Icons -->
+            &nbsp;&nbsp;&nbsp;<i class="bi bi-instagram"></i>&nbsp;&nbsp;&nbsp;<i
+                class="bi bi-facebook"></i>&nbsp;&nbsp;&nbsp;<i class="bi bi-twitter"></i>
+        </span>
+    </div>
+</div>

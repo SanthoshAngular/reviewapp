@@ -1,0 +1,306 @@
+.home-container {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.all-movies {
+    width: 75%;
+    min-height: calc(100vh -80px);
+    border-right: 2px solid rgb(8, 239, 255);
+    padding: 20px 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-left: 5px solid rgb(8, 239, 255);
+}
+
+.view-all {
+    color: rgb(8, 239, 255);
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 20%;
+}
+
+
+.movie-thumbnail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+
+.popular-movies {
+
+    width: 25%;
+    min-width: calc(100vh -80px);
+    padding: 20px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-left: 5px solid rgb(8, 239, 255);
+}
+
+
+.movie {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.name {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+img {
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.name {
+    font-weight: bold;
+    height: 50px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+i {
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    padding-right: 0.1rem;
+    color: #d3d3d3;
+}
+
+.bi-heart-fill-filled {
+    color: red;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rating {
+    padding-right: 45px;
+    position: relative;
+}
+
+.rating-value {
+    position: absolute;
+    left: 5px;
+    font-weight: bold;
+}
+
+
+
+.movies {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.number {
+    margin-right: 10px;
+    font-weight: bold;
+    margin-bottom: 8%;
+}
+
+.name {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+}
+
+.user-rating,
+.overall-rating {
+    margin-right: 10px;
+}
+
+.view-all {
+    color: rgb(8, 239, 255);
+    text-align: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.movie-thumbnail {
+    background-color: black;
+}
+
+.card {
+    background-color: rgb(39, 38, 38);
+    color: white;
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+}
+
+.horizontal {
+    display: flex;
+    align-items: center;
+}
+
+.rating .rating-value {
+    padding-left: 75%;
+    padding-top: 5%;
+}
+
+
+.popular-movies {
+    position: absolute;
+    top: 12%;
+    right: 20px;
+    left: 73%;
+    min-width: 300px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-left: 1%;
+}
+
+
+.popular-movies h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-left: 5px solid rgb(8, 239, 255);
+}
+
+.popular-movies .movies {
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-movies .movie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.popular-movies .movie .name {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popular-movies .ratings {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.popular-movies .ratings .user-rating,
+.popular-movies .ratings .overall-rating {
+    margin-right: 10px;
+}
+
+.popular-movies .view-all {
+    color: rgb(8, 239, 255);
+    text-align: right;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* Your existing CSS */
+
+.home-container {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.all-movies {
+    min-height: calc(100vh - 80px);
+    border-right: 2px solid rgb(8, 239, 255);
+    padding: 20px 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-left: 5px solid rgb(8, 239, 255);
+}
+
+.view-all {
+    color: rgb(8, 239, 255);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+
+
+
+.movie-thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Distribute items along the row */
+    gap: 20px;
+    /* Adjust the gap between cards */
+    margin: -10px;
+    /* Counteract the padding/margin of each card */
+}
+
+.movie {
+    width: calc(25% - 20px);
+    /* Adjust the width for four cards in a row */
+    margin: 10px;
+    /* Adjust the margin */
+    flex-basis: calc(25% - 20px);
+    /* Fix for Firefox */
+    max-width: calc(25% - 20px);
+    /* Fix for Firefox */
+    box-sizing: border-box;
+    /* Ensure padding and borders don't expand the width */
+}
+
+
+/* On large screens, set specific widths using Bootstrap classes */
+@media (min-width: 992px) {
+    .movie {
+        width: calc(25% - 20px);
+        /* Four cards in a row with gap */
+    }
+}

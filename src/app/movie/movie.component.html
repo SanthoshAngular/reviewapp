@@ -1,0 +1,76 @@
+<!-- Star Rating Template -->
+<ng-template #t let-fill="fill">
+    <span class="star" [class.full]="fill===100">
+        <span class="full-star" [style.width.%]="fill"></span>&#9733;
+    </span>
+</ng-template>
+
+<!-- Header Component -->
+<app-header></app-header>
+
+<!-- Movie Container -->
+<div class="movie-container">
+    <!-- Top Section -->
+    <div class="top">
+        <!-- Left Section -->
+        <div class="left">
+            <!-- Movie Name and Rating -->
+            <div class="name">{{ movie?.name }}</div>
+            <div class="rating">
+                <app-star-rating [rating]="movie?.rating" [isReadonly]="true"></app-star-rating>
+                <span class="rating-value">{{ movie?.rating }}</span>
+            </div>
+            <!-- Movie Cover Image -->
+            <div class="cover">
+                <img [src]="movie?.cover">
+            </div>
+        </div>
+        <!-- Right Section -->
+        <div class="right">
+            <!-- Title for Rating -->
+            <div class="title" style="text-decoration: underline;">Rate This Movie</div>
+            <!-- Rating Form -->
+            <div class="rating-form">
+                <!-- User Name Input -->
+                <div class="form-group">
+                    <label for="uname">Name</label>
+                    <input type="text" name="uname" class="form-control" [(ngModel)]="userName">
+                </div>
+                <!-- Rating Input -->
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <div *ngIf="showRating">
+                        <ngb-rating [max]="5" (click)="user()" (ngModelChange)="ratingControl.setValue($event)"
+                            [ngModel]="ratingControl.value" id="userrating" [starTemplate]="t"></ngb-rating>
+                        <p id="userrating">Your Rating: {{ ratingControl.value }}</p>
+                    </div>
+                </div>
+                <!-- Review Textarea -->
+                <div class="form-group">
+                    <label for="review">Review</label><br>
+                    <textarea name="review" cols="30" rows="3" class="form-control" [(ngModel)]="userReview"></textarea>
+                </div>
+                <!-- Submit Button -->
+                <div class="btn-container">
+                    <button class="btn btn-primary" (click)="submit(userName, userReview, finalrating)">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Section - Reviews -->
+    <div class="bottom">
+        <!-- Title for Reviews -->
+        <h4 class="title">Reviews</h4>
+        <!-- Review List -->
+        <div class="reviews">
+            <!-- Displaying individual reviews -->
+            <div class="review" *ngFor="let review of movie?.reviews">
+                <div>Review by: {{ review.auther }}</div>
+                <div>{{ review.published_on }}</div>
+                <div>{{ review.review }}</div>
+                <div>Rating: {{ review.rating }}</div>
+            </div>
+        </div>
+    </div>
+</div>

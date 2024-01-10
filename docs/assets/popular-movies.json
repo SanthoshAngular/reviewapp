@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "name": "Nayagan",
+        "cover": "../assets/nayagan.jpg",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "22-12-2023",
+                "review": "very good movie",
+                "rating": "4.5"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Jai Bhim",
+        "cover": "../assets/jai-bhim.jpg",
+        "rating": 5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "22-12-2023",
+                "review": "very good movie",
+                "rating": "5"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Soorarai Pottru",
+        "cover": "../assets/soorarai-pootru.jpg",
+        "rating": 5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "22-12-2023",
+                "review": "very good movie",
+                "rating": "5"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "96",
+        "cover": "../assets/96.jpg",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "22-12-2023",
+                "review": "very good movie",
+                "rating": "4.5"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Visaaranai",
+        "cover": "../assets/visaranai.jpg",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "22-12-2023",
+                "review": "very good movie",
+                "rating": "4.5"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Asuran",
+        "cover": "../assets/asuran.jpg",
+        "rating": 5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "22-12-2023",
+                "review": "very good movie",
+                "rating": "5"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Sarpatta Parambarai",
+        "cover": "../assets/sarpatta.jpg",
+        "rating": 5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "22-12-2023",
+                "review": "very good movie",
+                "rating": "5"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Vada Chennai",
+        "cover": "../assets/vadachennai.jpg",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "22-12-2023",
+                "review": "very good movie",
+                "rating": "4.5"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Vada Chennai",
+        "cover": "../assets/vadachennai.jpg",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "22-12-2023",
+                "review": "very good movie",
+                "rating": "4.5"
+            }
+        ]
+    }
+]

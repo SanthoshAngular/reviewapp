@@ -1,0 +1,128 @@
+[
+    {
+        "id": 9,
+        "name": "Salaar",
+        "cover": "assets/salaar.jpeg",
+        "rating": 3.5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "bad movie",
+                "rating": "3.5"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Animal",
+        "cover": "assets/animal.jpg",
+        "rating": 4,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "bad movie",
+                "rating": "4"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Parking",
+        "cover": "assets/parking.jpg",
+        "rating": 3.5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "bad movie",
+                "rating": "3.5"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Fight Club",
+        "cover": "assets/fight-club.jpg",
+        "rating": 5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "bad movie",
+                "rating": "5"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Vaaranam Aayiram",
+        "cover": "assets/vaaranamaayiram.jpg",
+        "rating": 5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "bad movie",
+                "rating": "5"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Migration",
+        "cover": "assets/migration.jpg",
+        "rating": 4,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "bad movie",
+                "rating": "4"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Mayakkam Yenna",
+        "cover": "assets/mayakkamyenna.jpg",
+        "rating": 5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "bad movie",
+                "rating": "5"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Aquaman and the Lost Kingdom",
+        "cover": "assets/aquman.jpeg",
+        "rating": 4,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "bad movie",
+                "rating": "4"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Aquaman and the Lost Kingdom",
+        "cover": "assets/aquman.jpeg",
+        "rating": 4,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "bad movie",
+                "rating": "4"
+            }
+        ]
+    }
+]

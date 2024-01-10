@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "name": "Leo",
+        "cover": "../assets/leo.jpg",
+        "rating": 4,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "22-12-2023",
+                "review": "good movie",
+                "rating": "3"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Jigirthanda 2",
+        "cover": "../assets/jigirthanda.avif",
+        "rating": 3.5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "good movie",
+                "rating": "1"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Fight Club",
+        "cover": "../assets/fight-club.jpg",
+        "rating": 3,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "good movie",
+                "rating": "4"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "kannagi",
+        "cover": "../assets/kannagi.avif",
+        "rating": 3,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "good movie",
+                "rating": "3"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Annapoorani",
+        "cover": "../assets/annapoorani.jpg",
+        "rating": 2.5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "good movie",
+                "rating": "2.5"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Conjuring Kannappan",
+        "cover": "../assets/conjuring.jpg",
+        "rating": 2.5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "good movie",
+                "rating": "2.5"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Label",
+        "cover": "../assets/label.jpg",
+        "rating": 3.5,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "good movie",
+                "rating": "3"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Tamil Rockers",
+        "cover": "../assets/tamil rockers.jpg",
+        "rating": 3,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "good movie",
+                "rating": "3"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Tamil Rockers",
+        "cover": "../assets/tamil rockers.jpg",
+        "rating": 3,
+        "reviews": [
+            {
+                "auther": "santhosh",
+                "published_on": "2023",
+                "review": "good movie",
+                "rating": "3"
+            }
+        ]
+    }
+]
