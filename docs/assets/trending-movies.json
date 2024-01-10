@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Leo",
-        "cover": "../assets/leo.jpg",
+        "cover": "assets/leo.jpg",
         "rating": 4,
         "reviews": [
             {
@@ -16,7 +16,7 @@
     {
         "id": 2,
         "name": "Jigirthanda 2",
-        "cover": "../assets/jigirthanda.avif",
+        "cover": "assets/jigirthanda.avif",
         "rating": 3.5,
         "reviews": [
             {
@@ -30,7 +30,7 @@
     {
         "id": 3,
         "name": "Fight Club",
-        "cover": "../assets/fight-club.jpg",
+        "cover": "assets/fight-club.jpg",
         "rating": 3,
         "reviews": [
             {
@@ -44,7 +44,7 @@
     {
         "id": 4,
         "name": "kannagi",
-        "cover": "../assets/kannagi.avif",
+        "cover": "assets/kannagi.avif",
         "rating": 3,
         "reviews": [
             {
@@ -58,7 +58,7 @@
     {
         "id": 5,
         "name": "Annapoorani",
-        "cover": "../assets/annapoorani.jpg",
+        "cover": "assets/annapoorani.jpg",
         "rating": 2.5,
         "reviews": [
             {
@@ -72,7 +72,7 @@
     {
         "id": 6,
         "name": "Conjuring Kannappan",
-        "cover": "../assets/conjuring.jpg",
+        "cover": "assets/conjuring.jpg",
         "rating": 2.5,
         "reviews": [
             {
@@ -86,7 +86,7 @@
     {
         "id": 7,
         "name": "Label",
-        "cover": "../assets/label.jpg",
+        "cover": "assets/label.jpg",
         "rating": 3.5,
         "reviews": [
             {
@@ -100,7 +100,7 @@
     {
         "id": 8,
         "name": "Tamil Rockers",
-        "cover": "../assets/tamil rockers.jpg",
+        "cover": "assets/tamil rockers.jpg",
         "rating": 3,
         "reviews": [
             {
@@ -114,7 +114,7 @@
     {
         "id": 8,
         "name": "Tamil Rockers",
-        "cover": "../assets/tamil rockers.jpg",
+        "cover": "assets/tamil rockers.jpg",
         "rating": 3,
         "reviews": [
             {

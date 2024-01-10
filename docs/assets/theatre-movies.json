@@ -2,7 +2,7 @@
     {
         "id": 9,
         "name": "Salaar",
-        "cover": "../assets/salaar.jpeg",
+        "cover": "assets/salaar.jpeg",
         "rating": 3.5,
         "reviews": [
             {
@@ -16,7 +16,7 @@
     {
         "id": 10,
         "name": "Animal",
-        "cover": "../assets/animal.jpg",
+        "cover": "assets/animal.jpg",
         "rating": 4,
         "reviews": [
             {
@@ -30,7 +30,7 @@
     {
         "id": 11,
         "name": "Parking",
-        "cover": "../assets/parking.jpg",
+        "cover": "assets/parking.jpg",
         "rating": 3.5,
         "reviews": [
             {
@@ -44,7 +44,7 @@
     {
         "id": 12,
         "name": "Fight Club",
-        "cover": "../assets/fight-club.jpg",
+        "cover": "assets/fight-club.jpg",
         "rating": 5,
         "reviews": [
             {
@@ -58,7 +58,7 @@
     {
         "id": 13,
         "name": "Vaaranam Aayiram",
-        "cover": "../assets/vaaranamaayiram.jpg",
+        "cover": "assets/vaaranamaayiram.jpg",
         "rating": 5,
         "reviews": [
             {
@@ -72,7 +72,7 @@
     {
         "id": 14,
         "name": "Migration",
-        "cover": "../assets/migration.jpg",
+        "cover": "assets/migration.jpg",
         "rating": 4,
         "reviews": [
             {
@@ -86,7 +86,7 @@
     {
         "id": 15,
         "name": "Mayakkam Yenna",
-        "cover": "../assets/mayakkamyenna.jpg",
+        "cover": "assets/mayakkamyenna.jpg",
         "rating": 5,
         "reviews": [
             {
@@ -100,7 +100,7 @@
     {
         "id": 16,
         "name": "Aquaman and the Lost Kingdom",
-        "cover": "../assets/aquman.jpeg",
+        "cover": "assets/aquman.jpeg",
         "rating": 4,
         "reviews": [
             {
@@ -114,7 +114,7 @@
     {
         "id": 16,
         "name": "Aquaman and the Lost Kingdom",
-        "cover": "../assets/aquman.jpeg",
+        "cover": "assets/aquman.jpeg",
         "rating": 4,
         "reviews": [
             {
